@@ -13,7 +13,7 @@ export const countingValleys = (path) => {
     }
     return valley
 }
-console.log("countingValleys", countingValleys(ar))
+
 
 
 
