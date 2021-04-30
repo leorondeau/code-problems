@@ -12,3 +12,32 @@ Go ahead and read the prompt and tell us what you are thinking as you code."
 Using your favorite language, write a function called repeatedChar which returns 
 the first letter of each string that occurs twice in a row in a new string. (10mins)
 */
+// hyani
+const arrayOfStrings = ['kasjfhhi', 'yyjknaalkjs', 'anewunnsii']
+
+
+
+const repeatedChar = (string) => {
+    // debugger
+    const firstLetter = []
+    for (let i = 0; i < string.length; i++) {
+        for (var j = i + 1; j <= string.length; j++)
+            if (string[j] == string[i])
+            {firstLetter.push(string[i])}
+
+    }
+    return firstLetter
+}
+
+
+console.log("solution", repeatedChar('yyjknaalkjs'))
+// Return [letter(a), letter(b), letter(c)]
+
+// set operator
+
+// const repeatedChar = (string) => {
+//     const splitString = string.split("")
+//     return splitString
+// }
+
+// console.log("solution", repeatedChar('yyjknaalkjs'))
