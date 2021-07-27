@@ -30,7 +30,7 @@ const repeatedChar = (string) => {
 }
 
 
-console.log("solution", repeatedChar('yyjknaalkjs'))
+// console.log("solution", repeatedChar('yyjknaalkjs'))
 // Return [letter(a), letter(b), letter(c)]
 
 // set operator
