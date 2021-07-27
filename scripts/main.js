@@ -1,7 +1,7 @@
 // import "./countingValleys.js"
 // import "./paddedNumbers.js"
-import "./repeatedChar.js"
-// import "./raveTech.js"
+// import "./repeatedChar.js"
+import "./raveTech.js"
 
 
 
