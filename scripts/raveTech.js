@@ -34,30 +34,52 @@
 // }
 //  console.log(anagram('hello','bye'))
 
-const permut = (string) => {
-    // debugger
-    if (string < 2) {
-        return string
-    }
-    let permutations = []
-    for (let i = 0; i < string.length; i++) {
-        let char = string[i]
-        if (string.indexOf(char) != i)
-            continue
-
-        let remainingString = string.slice(0, i) + string.slice(i + 1, string.length); //Note: you can concat Strings via '+' in JS
-
-        for (let subPermutation of permut(remainingString))
-            permutations.push(char + subPermutation)
-    }
-    console.log(permutations)
-    return permutations
-}
+// const permut = (string) => {
+//     // debugger
+//     if (string < 2) {
+//         return string
+//     }
+//     let permutations = []
+//     for (let i = 0; i < string.length; i++) {
+//         let char = string[i]
+//         if (string.indexOf(char) != i)
+//             continue
+//         let remainingString = string.slice(0, i) + string.slice(i + 1, string.length); //Note: you can concat Strings via '+' in JS
+//         for (let subPermutation of permut(remainingString)){ 
+//             permutations.push(char + subPermutation)}
+        
+//     }
+//     return permutations
+// }
 
 
 // const myString = "dog";
+// console.log('mystring', permut(myString))
 // let permutations = permut(myString);
 // for (permutation of permutations) {
 //     console.log('perm', permutation)
 // }
 
+// function permut(string) {
+//     if (string.length < 2) return string; // This is our break condition
+  
+//     let permutations = []; // This array will hold our permutations
+//     for (var i = 0; i < string.length; i++) {
+//       var char = string[i];
+  
+//       // Cause we don't want any duplicates:
+//       if (string.indexOf(char) != i) // if char was used already
+//         continue; // skip it this time
+  
+//       var remainingString = string.slice(0, i) + string.slice(i + 1, string.length); //Note: you can concat Strings via '+' in JS
+  
+//       for (var subPermutation of permut(remainingString))
+//         permutations.push(char + subPermutation)
+//     }
+//     return permutations;
+//   }
+
+//   var myString = "xyz";
+//  let permutations = permut(myString);
+//  for (permutation of permutations)
+//    console.log(permutation)
