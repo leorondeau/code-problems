@@ -4,7 +4,8 @@
 // Example:
 // solution(5) // should return "Value is 00005"
 
-
+const contentTarget = document.querySelector('#container')
+paddedNumberHTML = contentTarget.innerHTML
 
 const paddedNumber = (n) => {
     const convertToString = n + ''
@@ -14,7 +15,7 @@ const paddedNumber = (n) => {
         return paddedFive.slice(numberToSlice)
     }
     else {
-        return paddedFive
+        return `${paddedFive}`  
     }
 }
 
